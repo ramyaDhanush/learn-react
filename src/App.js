@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <div className="App"></div>
-      <Greet />
+      <Greet name="Ramya"></Greet>
+      <Greet name="Person 2"></Greet>
+
       <Welcome />
     </>
   );

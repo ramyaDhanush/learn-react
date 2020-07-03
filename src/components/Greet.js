@@ -5,6 +5,10 @@ import React from "react";
 // }
 
 // Functional Component
-const Greet = () => <h1>Hey</h1>;
+const Greet = (props) => {
+  return <h1>Hello, {props.name}</h1>;
+
+  // React.createElement("div", null, React.createElement('h1',{className:'Mow'},'Wwoww'));
+};
 
 export default Greet;
