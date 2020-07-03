@@ -11,7 +11,7 @@ function App() {
       <Greet name="Ramya" last="Dhanushkodi"></Greet>
       <Greet name="Person 2">ChildrenProperty</Greet>
 
-      <Welcome />
+      <Welcome name="Class - 1" >Wowowowow</Welcome>
     </>
   );
 }
