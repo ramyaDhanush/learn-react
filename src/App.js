@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <div className="App"></div>
-      <Greet name="Ramya"></Greet>
-      <Greet name="Person 2"></Greet>
+      <Greet name="Ramya" last="Dhanushkodi"></Greet>
+      <Greet name="Person 2">ChildrenProperty</Greet>
 
       <Welcome />
     </>
