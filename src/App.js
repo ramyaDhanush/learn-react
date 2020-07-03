@@ -5,16 +5,25 @@ import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from "./components/ClassClick";
+import EventBind from "./components/EventBind";
+
 function App() {
   return (
     <>
       <div className="App"></div>
-      <Greet name="Ramya" last="Dhanushkodi"></Greet>
+      <EventBind>
+        
+      </EventBind>
+      {/* // <ClassClick></ClassClick> */}
+      {/* <FunctionClick></FunctionClick> */}
+      {/* <Greet name="Ramya" last="Dhanushkodi"></Greet>
       <Greet name="Person 2">ChildrenProperty</Greet>
 
       <Welcome name="Class - 1">Wowowowow</Welcome>
       <Message></Message>
-      <Counter></Counter>
+      <Counter></Counter> */}
     </>
   );
 }
