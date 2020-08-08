@@ -15,7 +15,7 @@ function Columns() {
       }
       <td>Name</td>
       <td>Ramya</td>
-    </React.Fragment>
+    </React.Fragment>   
   )
 }
 
