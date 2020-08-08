@@ -16,36 +16,14 @@ import Inline from "./components/Inline";
 import "./appStyles.css";
 import styles from "./appStyles.module.css";
 import Form from "./components/Form";
+import LifecycleA from "./components/LifecycleA";
 
 function App() {
   return (
     <>
       <div className="App">
-        <Form></Form>
-        {/* <h1 className="error">Error</h1>
-        <h2 className={styles.success}>Success</h2>
-
-        <StyleSheet primary={true}></StyleSheet>
-        <Inline></Inline> */}
-        {/* <NameList></NameList> */}
-        {/* <UserGreeting></UserGreeting> */}
+        <LifecycleA></LifecycleA>
       </div>
-
-      {/* 
-      <ParentComponent></ParentComponent> */}
-
-      {/* <EventBind>
-        
-      </EventBind>
-       */}
-      {/* // <ClassClick></ClassClick> */}
-      {/* <FunctionClick></FunctionClick> */}
-      {/* <Greet name="Ramya" last="Dhanushkodi"></Greet>
-      <Greet name="Person 2">ChildrenProperty</Greet>
-
-      <Welcome name="Class - 1">Wowowowow</Welcome>
-      <Message></Message>
-      <Counter></Counter> */}
     </>
   );
 }
