@@ -9,23 +9,23 @@ function App() {
   return (
     <>
       <div className="App">
-        <CounterRender
-          render={(count, incrementCount) => (
+        <CounterRender>
+          {(count, incrementCount) => (
             <ClickCounter2
               count={count}
               incrementCount={incrementCount}
             ></ClickCounter2>
           )}
-        ></CounterRender>
+        </CounterRender>
 
-        <CounterRender
-          render={(count, incrementCount) => (
+        <CounterRender>
+          {(count, incrementCount) => (
             <HoverCounter2
               count={count}
               incrementCount={incrementCount}
             ></HoverCounter2>
           )}
-        ></CounterRender>
+        </CounterRender>
       </div>
     </>
   );
