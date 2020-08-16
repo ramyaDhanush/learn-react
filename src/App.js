@@ -24,12 +24,14 @@ import ParentComp from "./components/ParentComp";
 import RefsDemo from "./components/RefsDemo";
 import FocusInput from "./components/FocusInput";
 import FRParentRef from "./components/FRParentRef";
+import PortalDemo from "./components/PortalDemo";
 
 function App() {
   return (
     <>
       <div className="App">
         <FRParentRef></FRParentRef>
+        <PortalDemo></PortalDemo>
       </div>
     </>
   );
