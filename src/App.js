@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <ClickCounter></ClickCounter>
+        <ClickCounter name="Ramya"></ClickCounter>
         <HoverCounter></HoverCounter>
       </div>
     </>
