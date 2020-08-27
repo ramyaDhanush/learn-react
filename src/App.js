@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import "./appStyles.css";
-import PostForm from "./components/PostForm";
+import HookCounterTwo from "./components/Hooks/HookCounterTwo";
 function App() {
   return (
     <div className="App">
-      <PostForm/>
+      <HookCounterTwo/>
     </div>
   );
 }
