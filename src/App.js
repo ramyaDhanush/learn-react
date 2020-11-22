@@ -1,14 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import "./appStyles.css";
-import HookCounterFour from "./components/Hooks/HookCounterFour";
-import MyComponent from "./components/Hooks/MyComponent";
-function App() {
+
+
+const App = () => {
+  const [{c1,c2}, setCount] = useState({c1:10, c2:20});
   return (
-    <div className="App">
-      <HookCounterFour/>
-      <MyComponent/>
-    </div>
+    <>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div className="">{c1}</div>
+    <div>{c2}</div>
+    <button onClick={()=>
+    setCount(c => ({
+      ...c, c1:c1+1
+    }))} >+</button>
+    </>
   );
 }
 
