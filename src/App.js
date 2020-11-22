@@ -1,21 +1,23 @@
-import React, {useState} from "react";
+import React, {useState, useCallback} from "react";
 import "./App.css";
 import "./appStyles.css";
-
+import Hello from './components/Hello'
 
 const App = () => {
-  const [{c1,c2}, setCount] = useState({c1:10, c2:20});
+  const [count, setCount] = useState(0);
+  
+  const increment = useCallback(()=>{
+    setCount(c=>c+1);
+  },[setCount]);
+
   return (
     <>
     <div>Lorem ipsum dolor sit amet.</div>
-    <div className="">{c1}</div>
-    <div>{c2}</div>
-    <button onClick={()=>
-    setCount(c => ({
-      ...c, c1:c1+1
-    }))} >+</button>
+    <Hello increment={increment}/>
+    <div>{count}</div>
     </>
   );
 }
 
 export default App;
+ 
