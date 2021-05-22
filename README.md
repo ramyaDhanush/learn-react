@@ -1,71 +1,66 @@
-A Repo to keep track of learning  React
+# REDUX
+
+Redux is a predictable state container for javascript apps
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+javascript apps - Not tied with React
+State Container - Stores state of application. The state of application can change. 
+Predictable -  In redux, all state transitions are explicit and it is possible to keep track of them
 
-## Available Scripts
+# When to use Redux
 
-In the project directory, you can run:
+Manage the state of application in a predictable way, redux can help you
 
-### `npm start`
+React Context - Prevents Prop drilling
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# React - Redux
+React is a library to build UI 
+Redux is a library for managing state in a predictable way in javascript apps
+React - Redux -> A official Redux UI binding library for react
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Three Core Concepts
 
-### `npm test`
+Store - Holds the state of application {}
+Action - Describes the changes in the state of application {type: "CONSTANT", payload: [data]}
+Reducer - Carries out the state transition depending on the  {(previousState, action) => newState}
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Three Principles
 
-### `npm run build`
+1. The state of application is stored in an object tree within a single store
+2. The only way to change the state is to emit an action, an object describing what happened
+3. To specify the state tree is transformed by actions, you write pure reducers
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Actions**
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The only way to inter with the store
+Carry information from app to the store
+Actions are plain javascript objects
+Have a 'type' property that indicates the type of action being performed
+Action Creator - a function that returns the action
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Reducers**
 
-### `npm run eject`
+Specify how app's state changes in response to actions sent to the store
+Function that accepts the state and action as arguments, and returns the next state 
+(previousState, action) => newState
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Store**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+One store for entire application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Responsibilities of store**:
+1. Holds application state
+2. Allows access to state via **getState()**
+3. Allows state to be updated via **dispatch(action)**
+4. Register listeners via **subscribe(listener)**
+5. Handles unregistering of listeners via the function returned by subscribe(listener)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Middleware
 
-## Learn More
+A suggested way to extend Redux with custom functionality
+Provides a third-party extension point between dispatching an action and the moment it reaches the reducer
+Using middleware for logging, crash reporting, performing asynchronous tasks etc.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Eg:- redux-logger (log redux process) & redux-thunk (define async action creators)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
