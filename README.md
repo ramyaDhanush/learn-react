@@ -55,6 +55,8 @@ One store for entire application
 4. Register listeners via **subscribe(listener)**
 5. Handles unregistering of listeners via the function returned by subscribe(listener)
 
+![image](https://user-images.githubusercontent.com/33391148/119227420-622c7280-bb2b-11eb-853c-64fb82de3d58.png)
+
 # Middleware
 
 A suggested way to extend Redux with custom functionality
